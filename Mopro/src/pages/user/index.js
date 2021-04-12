@@ -21,7 +21,7 @@ const DaftarUser = () => {
           <Card style = {styles.card}
             key ={item.id}
             name ={item.name}
-            user ={item.username}
+            username ={item.username}
             email ={item.email}
             address ={item.address.street}
             phone ={item.phone}

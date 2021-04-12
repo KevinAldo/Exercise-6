@@ -6,7 +6,7 @@ import Gap from './gap';
 
 const App = () => {
 
-  const [welcome, setWelcome] = useState('welcomme')
+  const [welcome, setWelcome] = useState('Registration')
   const [UserName, setUserName] = useState('')
   const [Pasword, setPasword] = useState('')
 
