@@ -1,0 +1,57 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": 1,
+      "email": "george.bluth@reqres.in",
+      "first_name": "George",
+      "last_name": "Bluth"
+    },
+    {
+      "id": 2,
+      "email": "janet.weaver@reqres.in",
+      "first_name": "Janet",
+      "last_name": "Weaver"
+    },
+    {
+      "id": 3,
+      "email": "emma.wong@reqres.in",
+      "first_name": "Emma",
+      "last_name": "Wong"
+    },
+    {
+      "email": "likuayangaldo@gmail.com",
+      "first_name": "kevin",
+      "last_name": "aldo",
+      "id": 4
+    },
+    {
+      "email": "jhondoe@gmail.com",
+      "first_name": "john",
+      "last_name": "doe",
+      "id": 5
+    },
+    {
+      "email": "unklab@gmail.com",
+      "first_name": "universitas",
+      "last_name": "klabat",
+      "id": 6
+    }
+  ]
+}

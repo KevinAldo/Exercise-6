@@ -7,25 +7,35 @@ const DaftarUser = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-   Axios.get('https://jsonplaceholder.typicode.com/users').then(res =>
+   Axios.get('http://10.0.2.2:3004/users').then(res =>
      setUsers(res.data),
     );
-  }, []);
+  }, [users]);
 
+  // useEffect(() => {
+  //   Axios.get('https://jsonplaceholder.typicode.com/users').then(res =>
+  //     setUsers(res.data),
+  //    );
+  //  }, []);
   return (
     <View style={styles.container}>
       <Text style={styles.title}>User List</Text>
-
       <ScrollView showsVerticalScrollIndicator={false}>
         {users.map(item => (
           <Card style = {styles.card}
             key ={item.id}
-            name ={item.name}
-            username ={item.username}
             email ={item.email}
-            address ={item.address.street}
-            phone ={item.phone}
-          />
+            firstName ={item.first_name}
+            lastName ={item.last_name}
+          />  
+          // <Card style = {styles.card}
+          //   key ={item.id}
+          //   name ={item.name}
+          //   username ={item.username}
+          //   email ={item.email}
+          //   address ={item.address.street}
+          //   phone ={item.phone}
+          // />
         ))}
       </ScrollView>
     </View>
@@ -57,24 +67,28 @@ const styles = StyleSheet.create({
     marginTop: 15,
     alignItems: 'center',
   },
-  name: {
-    fontSize: 18,
-    fontWeight: '700',
-  },
-  user: {
-    fontSize: 18,
-    fontWeight: '700',
-  },
   email: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: '700',
   },
-  address: {
-    fontSize: 18,
+  firstName: {
+    fontSize: 20,
     fontWeight: '700',
   },
-  phone: {
-    fontSize: 18,
+  lastName: {
+    fontSize: 20,
     fontWeight: '700',
   },
+  // user: {
+  //   fontSize: 18,
+  //   fontWeight: '700',
+  // },
+  // address: {
+  //   fontSize: 18,
+  //   fontWeight: '700',
+  // },
+  // phone: {
+  //   fontSize: 18,
+  //   fontWeight: '700',
+  // },
 });

@@ -1,18 +1,27 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
-const Card = ({name, username, email, address, phone}) => {
+const Card = ({email, firstName, lastName}) => {
   return (
     <View style={styles.card}>
-      <Text style={styles.name}>{name}</Text>
-      <Text style={styles.user}>{username}</Text>
       <Text style={styles.email}>{email}</Text>
-      <Text style={styles.address}>{address}</Text>
-      <Text style={styles.phone}>{phone}</Text>
+      <Text style={styles.firstName}>{firstName}</Text>
+      <Text style={styles.lastName}>{lastName}</Text>
     </View>
   );
 };
 
+// const Card = ({name, username, email, address, phone}) => {
+//   return (
+//     <View style={styles.card}>
+//       <Text style={styles.name}>{name}</Text>
+//       <Text style={styles.user}>{username}</Text>
+//       <Text style={styles.email}>{email}</Text>
+//       <Text style={styles.address}>{address}</Text>
+//       <Text style={styles.phone}>{phone}</Text>
+//     </View>
+//   );
+// };
 export default Card;
 
 const styles = StyleSheet.create({
@@ -28,24 +37,32 @@ const styles = StyleSheet.create({
     marginTop: 15,
     alignItems: 'center',
   },
-  name: {
-    fontSize: 18,
-    fontWeight: '700',
-  },
-  user: {
-    fontSize: 18,
-    fontWeight: '700',
-  },
+  // name: {
+  //   fontSize: 18,
+  //   fontWeight: '700',
+  // },
+  // user: {
+  //   fontSize: 18,
+  //   fontWeight: '700',
+  // },
   email: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: '700',
   },
-  address: {
-    fontSize: 18,
+  firstName: {
+    fontSize: 20,
     fontWeight: '700',
   },
-  phone: {
-    fontSize: 18,
+  lastName: {
+    fontSize: 20,
     fontWeight: '700',
   },
+  // address: {
+  //   fontSize: 18,
+  //   fontWeight: '700',
+  // },
+  // phone: {
+  //   fontSize: 18,
+  //   fontWeight: '700',
+  // },
 });
